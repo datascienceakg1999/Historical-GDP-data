@@ -1,0 +1,2 @@
+avg_gdp = df.groupby('State')['GDP'].mean().sort_values(ascending=False)
+print(avg_gdp.head())
