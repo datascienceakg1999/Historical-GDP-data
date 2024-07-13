@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+states_to_plot = ['Maharashtra', 'Tamil Nadu', 'Uttar Pradesh', 'West Bengal']
+for state in states_to_plot:
+    state_data = df[df['State'] == state]
+    plt.plot(state_data['Year'], state_data['GDP'], label=state)
+
+plt.xlabel('Year')
+plt.ylabel('GDP (in Crores)')
+plt.title('GDP Trends for Selected Indian States')
+plt.legend()
+plt.show()
